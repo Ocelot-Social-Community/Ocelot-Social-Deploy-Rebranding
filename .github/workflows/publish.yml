@@ -1,9 +1,10 @@
 name: ocelot.social publish branded CI
 
+# Run only on explicit tags
 on:
   push:
-    branches:
-      - master
+    tags:
+    - '**'
 
 jobs:
   ##############################################################################
