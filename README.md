@@ -1,6 +1,7 @@
-# Sender.Fm Ocelot.Social Deploy Rebranding
+# Sender.Fm Deploys And Rebrands Ocelot.Social
 
-This repository is an in use template to rebrand, configure, and deploy [ocelot.social](https://github.com/Ocelot-Social-Community/Ocelot-Social) networks.
+This repository is used to rebrand, configure, and deploy [sender.fm](https://sender.fm) networks.
+The forked original repository is [Ocelot-Social-Deploy-Rebranding](https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding).
 
 <!-- [![Build Status](https://travis-ci.com/Human-Connection/Human-Connection.svg?branch=master)](https://travis-ci.com/Human-Connection/Human-Connection) -->
 <!-- [![Codecov Coverage](https://img.shields.io/codecov/c/github/Human-Connection/Human-Connection/master.svg?style=flat-square)](https://codecov.io/gh/Human-Connection/Human-Connection/) -->
@@ -9,7 +10,7 @@ This repository is an in use template to rebrand, configure, and deploy [ocelot.
 <!-- [![Open Source Helpers](https://www.codetriage.com/human-connection/human-connection/badges/users.svg)](https://www.codetriage.com/human-connection/human-connection) -->
 
 <p align="center">
-  <img src="branding/static/img/custom/welcome.svg" alt="Ocelot-Social" width="40%" height="40%">
+  <img src="branding/static/img/custom/welcome.svg" alt="sender.fm" width="40%" height="40%">
 </p>
 
 <!--
@@ -26,6 +27,7 @@ Logins:
 | `admin@example.org` | 1234 | admin |
 -->
 
+<!--
 ## Usage
 
 Fork this repository and configure as well as rebrand it for your own [ocelot.social](https://github.com/Ocelot-Social-Community/Ocelot-Social) network.
@@ -35,6 +37,7 @@ Fork this repository and configure as well as rebrand it for your own [ocelot.so
 Afterwards you can [deploy](deployment/README.md) it on your server:
 
 - [Kubernetes with Helm](deployment/kubernetes/README.md)
+-->
 
 ## Developer Chat
 
