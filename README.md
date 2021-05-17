@@ -1,4 +1,4 @@
-# Ocelot-Social-Deploy-Rebranding
+# Sender.Fm Ocelot.Social Deploy Rebranding
 
 This repository is an in use template to rebrand, configure, and deploy [ocelot.social](https://github.com/Ocelot-Social-Community/Ocelot-Social) networks.
 
