@@ -1,14 +1,14 @@
 {
-  "name": "ocelot-social-branded",
+  "name": "sender-fm",
   "version": "1.0.2",
   "ocelotDockerVersionTag": "1.0.2-79",
-  "dockerOrganisation": "ocelotsocialnetwork",
-  "description": "Ocelot Social Branded",
+  "dockerOrganisation": "senderfm",
+  "description": "sender.fm ocelot.social Network",
   "author": "ocelot.social Community",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding.git"
+    "url": "https://github.com/sender-fm/Sender-Fm-Ocelot-Social-Deploy-Rebranding.git"
   }
 }
