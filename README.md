@@ -10,7 +10,7 @@ The forked original repository is [Ocelot-Social-Deploy-Rebranding](https://gith
 <!-- [![Open Source Helpers](https://www.codetriage.com/human-connection/human-connection/badges/users.svg)](https://www.codetriage.com/human-connection/human-connection) -->
 
 <p align="center">
-  <img src="branding/static/img/custom/welcome.svg" alt="sender.fm" width="40%" height="40%">
+  <img src="branding/static/img/custom/logo-squared.svg" alt="sender.fm" width="40%" height="40%">
 </p>
 
 <!--
