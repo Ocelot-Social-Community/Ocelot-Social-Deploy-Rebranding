@@ -10,6 +10,7 @@ services:
       dockerfile: docker/webapp.Dockerfile
       target: branded
       context: .
+    image: senderfm/webapp-branded:latest
     ports:
       - 3000:3000
     networks:
@@ -30,6 +31,7 @@ services:
       dockerfile: docker/backend.Dockerfile
       target: branded
       context: .
+    image: senderfm/backend-branded:latest
     networks:
       - test-network
     depends_on:
@@ -70,19 +72,14 @@ services:
   maintenance:
     build:
       # TODO: Separate from webapp, this must be independent
-      dockerfile: docker/backend.Dockerfile
+      dockerfile: docker/maintenance.Dockerfile
       target: branded
       context: .
-    environment:
-      - JWT_SECRET="XXXXXXXXX"
-      - PRIVATE_KEY_PASSPHRASE="XXXXXXXXX"
-      - MAPBOX_TOKEN="pk.eyJ1IjoiYnVzZmFrdG9yIiwiYSI6ImNraDNiM3JxcDBhaWQydG1uczhpZWtpOW4ifQ.7TNRTO-o9aK1Y6MyW_Nd4g"
-    depends_on:
-      - backend
+    image: senderfm/maintenance-branded:latest
     networks:
       - test-network
     ports:
-      - 5000:5000
+      - 5000:80
   ########################################################
   # MAILSERVER TO FAKE SMTP ##############################
   ########################################################

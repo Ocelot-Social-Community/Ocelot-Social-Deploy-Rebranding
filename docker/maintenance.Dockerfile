@@ -1,4 +1,4 @@
-ARG APP_IMAGE=ocelotsocialnetwork/webapp
+ARG APP_IMAGE=ocelotsocialnetwork/maintenance
 ARG APP_IMAGE_TAG_BASE=latest-base
 ARG APP_IMAGE_TAG_CODE=latest-code
 ARG APP_IMAGE_BASE=${APP_IMAGE}:${APP_IMAGE_TAG_BASE}
@@ -19,7 +19,7 @@ COPY branding/constants/ constants/
 FROM code as build
 
 # yarn install
-## at the moment done in $APP_IMAGE_CODE
+## unnicely done in $APP_IMAGE_CODE at the moment, see main repo
 # RUN yarn install --production=false --frozen-lockfile --non-interactive
 # yarn generate
 RUN yarn run generate
@@ -32,4 +32,4 @@ FROM nginx:alpine as branded
 
 COPY --from=build ./app/dist/ /usr/share/nginx/html/
 RUN rm /etc/nginx/conf.d/default.conf
-COPY maintenance/nginx/custom.conf /etc/nginx/conf.d/
+COPY --from=code ./app/maintenance/nginx/custom.conf /etc/nginx/conf.d/
