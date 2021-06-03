@@ -6,10 +6,6 @@ services:
   # WEBAPP ###############################################
   ########################################################
   webapp:
-    build:
-      dockerfile: docker/webapp.Dockerfile
-      target: branded
-      context: .
     image: senderfm/webapp-branded:latest
     ports:
       - 3000:3000
@@ -27,10 +23,6 @@ services:
   # BACKEND ##############################################
   ########################################################
   backend:
-    build:
-      dockerfile: docker/backend.Dockerfile
-      target: branded
-      context: .
     image: senderfm/backend-branded:latest
     networks:
       - test-network
@@ -57,7 +49,7 @@ services:
   # NEO4J ################################################
   ########################################################
   neo4j:
-    image: ocelotsocialnetwork/neo4j:community
+    image: senderfm/neo4j-community-branded:latest
     networks:
       - test-network
     environment:
@@ -70,11 +62,6 @@ services:
   # MAINTENANCE ##########################################
   ########################################################
   maintenance:
-    build:
-      # TODO: Separate from webapp, this must be independent
-      dockerfile: docker/maintenance.Dockerfile
-      target: branded
-      context: .
     image: senderfm/maintenance-branded:latest
     networks:
       - test-network
@@ -89,6 +76,5 @@ services:
       - 1080:80
     networks:
       - test-network
-
 networks:
   test-network:
