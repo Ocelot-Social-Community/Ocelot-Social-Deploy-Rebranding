@@ -6,12 +6,6 @@ services:
   # WEBAPP ###############################################
   ########################################################
   webapp:
-    # build:
-    #   dockerfile: docker/webapp.Dockerfile
-    #   target: branded
-    #   context: .
-    # args:
-    #   - APP_IMAGE=senderfm/webapp-branded:latest
     image: senderfm/webapp-branded:latest
     ports:
       - 3000:3000
@@ -29,12 +23,6 @@ services:
   # BACKEND ##############################################
   ########################################################
   backend:
-    # build:
-    #   dockerfile: docker/backend.Dockerfile
-    #   target: branded
-    #   context: .
-    # args:
-    #   - APP_IMAGE=senderfm/backend-branded:latest
     image: senderfm/backend-branded:latest
     networks:
       - test-network
@@ -74,18 +62,7 @@ services:
   # MAINTENANCE ##########################################
   ########################################################
   maintenance:
-    # build:
-      # TODO: Separate from webapp, this must be independent
-      # dockerfile: docker/maintenance.Dockerfile
-      # target: branded
-      # context: .
     image: senderfm/maintenance-branded:latest
-    # environment:
-    #   - JWT_SECRET="XXXXXXXXX"
-    #   - PRIVATE_KEY_PASSPHRASE="XXXXXXXXX"
-    #   - MAPBOX_TOKEN="pk.eyJ1IjoiYnVzZmFrdG9yIiwiYSI6ImNraDNiM3JxcDBhaWQydG1uczhpZWtpOW4ifQ.7TNRTO-o9aK1Y6MyW_Nd4g"
-    # depends_on:
-    #   - backend
     networks:
       - test-network
     ports:
