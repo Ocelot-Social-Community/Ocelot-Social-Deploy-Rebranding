@@ -12,6 +12,7 @@ FROM $APP_IMAGE_CODE as code
 # copy public constants into the Docker image to brand it
 COPY branding/static/ static/
 COPY branding/constants/ constants/
+COPY branding/locales/ locales/
 
 ##################################################################################
 # BUILD ##########################################################################
