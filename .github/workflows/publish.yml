@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-# on: [push] # for testing while developing
+      - 1-flexible-footer-links
 
 jobs:
   ##############################################################################
