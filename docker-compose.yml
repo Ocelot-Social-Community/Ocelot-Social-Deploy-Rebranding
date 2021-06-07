@@ -10,7 +10,7 @@ services:
       dockerfile: docker/webapp.Dockerfile
       target: branded
       context: .
-    image: senderfm/webapp-branded:latest
+    # image: senderfm/webapp-branded:latest
     ports:
       - 3000:3000
     networks:
@@ -31,7 +31,7 @@ services:
       dockerfile: docker/backend.Dockerfile
       target: branded
       context: .
-    image: senderfm/backend-branded:latest
+    # image: senderfm/backend-branded:latest
     networks:
       - test-network
     depends_on:
@@ -75,7 +75,7 @@ services:
       dockerfile: docker/maintenance.Dockerfile
       target: branded
       context: .
-    image: senderfm/maintenance-branded:latest
+    # image: senderfm/maintenance-branded:latest
     networks:
       - test-network
     ports:
