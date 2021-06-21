@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - deploy-rebranding-helfa # for testing while developing
+      # - deploy-rebranding-helfa # for testing while developing
 
 jobs:
   ##############################################################################
