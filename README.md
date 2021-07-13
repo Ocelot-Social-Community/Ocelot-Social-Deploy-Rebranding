@@ -1,6 +1,6 @@
 # Sender.Fm Deploys And Rebrands Ocelot.Social
 
-This repository is used to rebrand, configure, and deploy [sender.fm](https://sender.fm) networks.
+This repository is an in use template to rebrand, configure, and deploy [ocelot.social](https://github.com/Ocelot-Social-Community/Ocelot-Social) networks.
 The forked original repository is [Ocelot-Social-Deploy-Rebranding](https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding).
 
 <!-- [![Build Status](https://travis-ci.com/Human-Connection/Human-Connection.svg?branch=master)](https://travis-ci.com/Human-Connection/Human-Connection) -->
