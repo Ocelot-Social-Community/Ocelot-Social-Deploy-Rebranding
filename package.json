@@ -1,7 +1,7 @@
 {
   "name": "sender-fm",
   "version": "1.0.4",
-  "ocelotDockerVersionTag": "1.0.4-100",
+  "ocelotDockerVersionTag": "1.0.4-135",
   "dockerOrganisation": "senderfm",
   "description": "sender.fm Network driven by ocelot.social",
   "author": "ocelot.social Community",
