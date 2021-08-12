@@ -16,7 +16,6 @@ const ORGANIZATION = defaultPageParamsPages.ORGANIZATION.overwrite({
   },
 })
 const DONATE = defaultPageParamsPages.DONATE.overwrite({
-  // we use 'ocelot-social.herokuapp.com' at the moment, because redirections of 'ocelot.social' subpages are not working correctly
   // externalLink: null, // if string is defined and not empty it's dominating
 
   internalPage: {
@@ -30,7 +29,6 @@ const DONATE = defaultPageParamsPages.DONATE.overwrite({
   },
 })
 const IMPRINT = defaultPageParamsPages.IMPRINT.overwrite({
-  // we use 'ocelot-social.herokuapp.com' at the moment, because redirections of 'ocelot.social' subpages are not working correctly
   // externalLink: null, // if string is defined and not empty it's dominating
 
   internalPage: {
