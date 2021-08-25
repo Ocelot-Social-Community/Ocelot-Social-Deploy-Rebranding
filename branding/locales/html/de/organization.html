@@ -6,12 +6,12 @@
 </h1>
 <br>
 <!-- <iframe id="embed_player" frameborder="0" width="280" height="216" src="https://senderfm.airtime.pro/embed/player?stream=s1&skin=1"></iframe> -->
-<iframe class="player" id="embed_player" frameborder="0" width="510px" height="396px" src="https://senderfm.airtime.pro/embed/player?stream=s1&skin=2"></iframe>
+<iframe class="player" id="embed_player" frameborder="0" src="https://senderfm.airtime.pro/embed/player?stream=s1&skin=2"></iframe>
 <br>
 <h3 class="h3-headline">
   Sendeplan
 </h3>
-<iframe class="weekly-plan" height="802px" width="550px" scrolling="yes" frameborder="0" src=https://senderfm.airtime.pro/embed/weekly-program></iframe>
+<iframe class="weekly-plan" scrolling="yes" frameborder="0" src=https://senderfm.airtime.pro/embed/weekly-program></iframe>
 <br>
 <br>
 
@@ -19,21 +19,16 @@
 https://senderfm.out.airtime.pro/senderfm_a -->
 
 <style type="text/css">
-  .logo {
-    margin-top: 48px;
-    margin-bottom: 48px;
-  }
-
   .h1-headline {
     font-size: 48px;
     margin-top: 12px;
     margin-bottom: 8px;
   }
 
-  .h3-headline-big {
-    font-size: 64px;
-    margin-top: 12px;
-    margin-bottom: 8px;
+  @media (max-width: 686px) {
+    .h1-headline {
+      font-size: 36px;
+    }
   }
 
   .h3-headline {
@@ -42,10 +37,10 @@ https://senderfm.out.airtime.pro/senderfm_a -->
     margin-bottom: 8px;
   }
 
-  .h4-headline {
-    font-size: 18px;
-    margin-top: 12px;
-    margin-bottom: 8px;
+  @media (max-width: 686px) {
+    .h3-headline {
+      font-size: 28px;
+    }
   }
 
   .paragraph {
@@ -54,19 +49,32 @@ https://senderfm.out.airtime.pro/senderfm_a -->
     margin-bottom: 8px;
   }
 
-  .link {
-    margin-top: 4px;
-    margin-bottom: 8px;
-  }
-
   .player {
     margin-top: 0px;
     margin-bottom: 12px;
+    width: 510px;
+    height: 396px;
+  }
+
+  @media (max-width: 686px) {
+    .player {
+      width: 280px;
+      height: 410px;
+    }
   }
 
   .weekly-plan {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: -20px;
+    width: 550px;
+    height: 802px;
+  }
+
+  @media (max-width: 686px) {
+    .weekly-plan {
+      width: 320px;
+      height: 802px;
+    }
   }
 </style>
