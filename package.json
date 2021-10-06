@@ -1,7 +1,7 @@
 {
   "name": "helfa.social",
-  "version": "1.0.4",
-  "ocelotDockerVersionTag": "1.0.4-100",
+  "version": "1.0.6",
+  "ocelotDockerVersionTag": "1.0.6-160",
   "dockerOrganisation": "helfacommunity",
   "description": "helfa.social Branded",
   "author": "ocelot.social Community",
