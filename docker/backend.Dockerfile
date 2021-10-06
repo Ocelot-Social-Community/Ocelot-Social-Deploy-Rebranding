@@ -9,10 +9,11 @@ ARG APP_IMAGE_CODE=${APP_IMAGE}:${APP_IMAGE_TAG_CODE}
 ##################################################################################
 FROM $APP_IMAGE_CODE as code
 
-# copy public constants into the Docker image to brand it
-COPY branding/constants/links.js src/config/
+# copy public constants and email templates into the Docker image to brand it
+COPY branding/constants/emails.js src/config/
 COPY branding/constants/logos.js src/config/
 COPY branding/constants/metadata.js src/config/
+COPY branding/email/ src/middleware/helpers/email/
 
 ##################################################################################
 # BUILD ##########################################################################
@@ -33,7 +34,6 @@ FROM $APP_IMAGE_BASE as branded
 # Copy "binary"-files from build image
 COPY --from=build ${DOCKER_WORKDIR}/dist ./dist
 COPY --from=build ${DOCKER_WORKDIR}/node_modules ./node_modules
-# Copy static files # Wolle comment overfluid here?
 # TODO - externalize the uploads so we can copy the whole folder
 COPY --from=build ${DOCKER_WORKDIR}/public/img/ ./public/img/
 COPY --from=build ${DOCKER_WORKDIR}/public/providers.json ./public/providers.json
