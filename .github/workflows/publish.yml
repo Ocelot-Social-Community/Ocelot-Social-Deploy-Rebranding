@@ -3,8 +3,8 @@ name: ocelot.social publish branded CI
 on:
   push:
     branches:
-      # - master
-      - 3-release-v1.0.6–use-new-internal-pages+add-rebranded-emails-for-sending-notifications # for testing while developing
+      - master
+      # - deploy-rebranding-helfa # for testing while developing
 
 jobs:
   ##############################################################################
