@@ -128,7 +128,7 @@ export default {
     DATA_PRIVACY,
     FAQ,
     DONATE,
-    IMPRINT,
     SUPPORT,
+    IMPRINT,
   ],
 }
