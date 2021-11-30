@@ -1,19 +1,20 @@
 <!-- this file is replaced on rebranding by https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding/tree/master/branding/locales/html/ -->
 <!-- you can find and store templates at https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding/tree/master/branding/templates/ -->
 
-<h1 class="h1-headline">
-  Press Play
-</h1>
-<br>
-<!-- <iframe id="embed_player" frameborder="0" width="280" height="216" src="https://senderfm.airtime.pro/embed/player?stream=s1&skin=1"></iframe> -->
-<iframe class="player" id="embed_player" frameborder="0" src="https://senderfm.airtime.pro/embed/player?stream=s1&skin=2"></iframe>
-<br>
-<h3 class="h3-headline">
-  Sendeplan
-</h3>
-<iframe class="weekly-plan" scrolling="yes" frameborder="0" src=https://senderfm.airtime.pro/embed/weekly-program></iframe>
-<br>
-<br>
+<div class="info-page">
+  <h1>
+    Press Play
+  </h1>
+  <br>
+  <!-- <iframe id="embed_player" frameborder="0" width="280" height="216" src="https://senderfm.airtime.pro/embed/player?stream=s1&skin=1"></iframe> -->
+  <iframe class="player" id="embed_player" frameborder="0" src="https://senderfm.airtime.pro/embed/player?stream=s1&skin=2"></iframe>
+  <br>
+  <h3>
+    Sendeplan
+  </h3>
+  <!-- <iframe class="weekly-plan" scrolling="yes" frameborder="0" src=https://senderfm.airtime.pro/embed/weekly-program></iframe> -->
+  <iframe class="weekly-plan" src="https://sender-fm.github.io/airtime-sendeplan/" airtimeChannel="http://senderfm.airtime.pro/api/week-info" name="Sendeplan"></iframe>
+</div>
 
 <!-- Stream Url:  
 https://senderfm.out.airtime.pro/senderfm_a -->
@@ -24,42 +25,22 @@ https://senderfm.out.airtime.pro/senderfm_a -->
     src: url('/sender-fm/fonts/AccordAlt_Bold.otf') format('opentype');
   }
 
-  .h1-headline {
+  .info-page {
+    margin-bottom: 48px;
+  }
+
+  .info-page h1 {
     font-family: 'AccordAlt-Bold';
     font-size: 48px;
     margin-top: 12px;
     margin-bottom: 8px;
   }
 
-  @media (max-width: 686px) {
-    .h1-headline {
-      font-size: 36px;
-    }
-  }
-
-  @media (max-width: 452px) {
-    .h1-headline {
-      font-size: 28px;
-    }
-  }
-
-  .h3-headline {
+  .info-page h3 {
     font-family: 'AccordAlt-Bold';
     font-size: 32px;
     margin-top: 12px;
     margin-bottom: 8px;
-  }
-
-  @media (max-width: 686px) {
-    .h3-headline {
-      font-size: 28px;
-    }
-  }
-
-  @media (max-width: 452px) {
-    .h3-headline {
-      font-size: 20px;
-    }
   }
 
   .paragraph {
@@ -75,38 +56,54 @@ https://senderfm.out.airtime.pro/senderfm_a -->
     height: 396px;
   }
 
-  @media (max-width: 686px) {
-    .player {
-      width: 280px;
-      height: 410px;
-    }
-  }
-
-  @media (max-width: 452px) {
-    .player {
-      width: 200px;
-      height: 398px;
-    }
-  }
-
   .weekly-plan {
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: -20px;
-    width: 550px;
+    margin-left: 0px;
+    width: 510px;
     height: 802px;
   }
 
   @media (max-width: 686px) {
+    .info-page h1 {
+      font-size: 36px;
+    }
+
+    .info-page h3 {
+      font-size: 28px;
+    }
+
+    .player {
+      width: 280px;
+      height: 410px;
+    }
+
     .weekly-plan {
-      width: 320px;
+      width: 280px;
       height: 802px;
     }
   }
 
   @media (max-width: 452px) {
+    .ds-container {
+      padding: 0;
+    }
+
+    .info-page h1 {
+      font-size: 28px;
+    }
+
+    .info-page h3 {
+      font-size: 20px;
+    }
+
+    .player {
+      width: 200px;
+      height: 398px;
+    }
+
     .weekly-plan {
-      width: 240px;
+      width: 200px;
       height: 802px;
     }
   }
