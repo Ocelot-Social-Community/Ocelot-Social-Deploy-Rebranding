@@ -8,6 +8,7 @@ version: "1.0.0"
 # e.g. appVersion: "latest" or "1.0.2-3-ocelot.social1.0.2-79"
 # Be aware that this requires all your apps to have the same docker image version available.
 appVersion: "latest"
+# appVersion: "1.0.5-34-ocelot.social1.0.5-153"
 description: The Helm chart for ocelot.social
 home: https://ocelot.social
 sources:
