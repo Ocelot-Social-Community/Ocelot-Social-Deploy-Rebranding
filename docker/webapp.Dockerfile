@@ -15,7 +15,7 @@ COPY branding/static/ static/
 COPY branding/constants/ constants/
 COPY branding/locales/html/ locales/html/
 # COPY branding/locales/index.js locales/index.js
-COPY branding/locales/*.json locales/tmp/
+COPY dummy branding/locales/*.json locales/tmp/
 COPY branding/assets/styles/imports/ assets/styles/imports/
 
 RUN apk add --no-cache bash jq
