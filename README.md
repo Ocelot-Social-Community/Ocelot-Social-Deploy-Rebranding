@@ -1,22 +1,27 @@
 # Sender.Fm Deploys And Rebrands Ocelot.Social
 
+[![Build Status Publish](https://github.com/sender-fm/Sender-Fm-Ocelot-Social-Deploy-Rebranding/actions/workflows/publish.yml/badge.svg)](https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding/actions)
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/sender-fm/Sender-Fm-Ocelot-Social-Deploy-Rebranding/blob/LICENSE.md)
+[![Discord Channel](https://img.shields.io/discord/489522408076738561.svg)](https://discord.gg/AJSX9DCSUA)
+[![Open Source Helpers](https://www.codetriage.com/sender-fm/sender-fm-deploy-rebranding/badges/users.svg)](https://www.codetriage.com/sender-fm/sender-fm-deploy-rebranding)
+
 This repository is an in use template to rebrand, configure, and deploy [ocelot.social](https://github.com/Ocelot-Social-Community/Ocelot-Social) networks.
 The forked original repository is [Ocelot-Social-Deploy-Rebranding](https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding).
 
-<!-- [![Build Status](https://travis-ci.com/Human-Connection/Human-Connection.svg?branch=master)](https://travis-ci.com/Human-Connection/Human-Connection) -->
-<!-- [![Codecov Coverage](https://img.shields.io/codecov/c/github/Human-Connection/Human-Connection/master.svg?style=flat-square)](https://codecov.io/gh/Human-Connection/Human-Connection/) -->
-<!-- [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/Human-Connection/Nitro-Backend/blob/backend/LICENSE.md) -->
-<!-- [![Discord Channel](https://img.shields.io/discord/489522408076738561.svg)](https://discordapp.com/invite/DFSjPaX) -->
-<!-- [![Open Source Helpers](https://www.codetriage.com/human-connection/human-connection/badges/users.svg)](https://www.codetriage.com/human-connection/human-connection) -->
-
+<!-- markdownlint-disable MD033 -->
 <p align="center">
   <img src="branding/static/img/custom/logo-squared.svg" alt="sender.fm" width="40%" height="40%">
 </p>
+<!-- markdownlint-enable MD033 -->
 
-<!--
 ## Live demo
 
-__Try out our deployed [development environment](https://develop.human-connection.org/).__
+__Try out our deployed [development environment](https://stage.ocelot.social).__
+
+Visit our staging networks:
+
+- central staging network: [stage.ocelot.social](https://stage.ocelot.social).
+<!-- - rebranded staging network: [rebrand.ocelot.social](https://stage.ocelot.social). -->
 
 Logins:
 
@@ -25,7 +30,6 @@ Logins:
 | `user@example.org` | 1234 | user |
 | `moderator@example.org` | 1234 | moderator |
 | `admin@example.org` | 1234 | admin |
--->
 
 ## Usage
 
@@ -45,7 +49,7 @@ The next step is:
 
 - [Configure And Branding](/branding/README.md)
 
-### Optional: Proof Configuration And Branding Locally
+### Optional: Locally Testing Configuration And Branding
 
 Just in case you have Docker installed and run the following, you can check your branding locally:
 
@@ -75,7 +79,7 @@ Secondly, in your GitHub repository, click on the 'Settings' tab and go to the '
 1. Named `DOCKERHUB_TOKEN` with the newly created DockerHub token (only the code, not the token name).
 2. Named `DOCKERHUB_USERNAME` with your DockerHub username.
 
-### Optional: Proof DockerHub Images Locally
+### Optional: Locally Testing Your DockerHub Images
 
 Just in case you like to check your pushed Docker images in your organisation's DockerHub repositories locally:
 
