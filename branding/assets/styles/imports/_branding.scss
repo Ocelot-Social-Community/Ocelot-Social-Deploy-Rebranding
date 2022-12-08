@@ -68,6 +68,10 @@ $color-locale-menu: $color-primary-yunite;
     font-size: 16px;
 }
 
+.branding-menu .ds-select-search .ds-text {
+    text-transform: none;
+}
+    
 .ds-footer {
     font-family: 'Overpass',Helvetica,Arial,Lucida,sans-serif;
     text-transform: uppercase;
