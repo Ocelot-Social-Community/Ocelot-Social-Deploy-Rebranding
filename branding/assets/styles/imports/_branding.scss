@@ -68,7 +68,8 @@ $color-locale-menu: $color-primary-yunite;
     font-size: 16px;
 }
 
-.branding-menu .ds-text .slug {
+/* avoid uppercase for user slug */
+span.slug {
     text-transform: none;
 }
     
