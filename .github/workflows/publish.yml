@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - fix-colors-in-header-menu
       # - 5059-epic-groups # for testing while developing
 
 jobs:
