@@ -9,7 +9,16 @@
     src: url('~@/assets/fonts/Overpass-VariableFont_wght.ttf');
 }
 
-$color-primary: #6e8b87;
+$color-primary: rgb(110, 139, 135);
+$color-primary-light: rgb(161, 179, 177);
+$color-primary-dark: rgb(81, 99, 97);
+$color-primary-active: rgb(112, 145, 143);
+$color-primary-inverse: rgb(241, 248, 243);
+$color-secondary: rgb(166, 255, 0);
+$color-secondary-active: rgb(188, 255, 130);
+$color-secondary-inverse: rgb(241, 255, 225);
+
+// we think of replacing this by '$color-secondary'
 $color-primary-yunite: #a6ff00;
 /*
 $color-primary-light: #fff;
