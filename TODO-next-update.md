@@ -8,7 +8,6 @@ When you overtake this deploy and rebrand repo to your network you have to recog
 
 - Create your own [Mapbox](https://mapbox.com/) account at [https://mapbox.com/](https://mapbox.com/) for your organization to get your own Mapbox token.
 - You have to add the `MAPBOX_TOKEN` from the `deployment/kubernetes/values.template.yaml` to your `deployment/kubernetes/values.yaml` and set it to your own Mapbox token.
-- Replace the `MAPBOX_TOKEN` in the files `docker-compose.yml`and `docker-compose.ocelotsocial-branded.yml`with yours.
 
 ## Version >= 2.2.0 with 'ocelotDockerVersionTag' 2.2.0-267
 
