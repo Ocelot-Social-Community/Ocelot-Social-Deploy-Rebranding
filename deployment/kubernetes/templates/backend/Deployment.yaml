@@ -34,6 +34,11 @@ spec:
       - name: container-{{ .Release.Name }}-backend
         image: "{{ .Values.BACKEND.DOCKER_IMAGE_REPO }}:{{ .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.BACKEND.DOCKER_IMAGE_PULL_POLICY }}
+        resources:
+          requests:
+            memory: "1G"
+          limits:
+            memory: "2G"
         envFrom:
         - configMapRef:
             name: configmap-{{ .Release.Name }}-backend

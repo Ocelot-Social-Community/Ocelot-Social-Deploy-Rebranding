@@ -33,6 +33,11 @@ spec:
       - name: container-{{ .Release.Name }}-webapp
         image: "{{ .Values.WEBAPP.DOCKER_IMAGE_REPO }}:{{ .Chart.AppVersion }}"
         imagePullPolicy: {{ .Values.WEBAPP.DOCKER_IMAGE_PULL_POLICY }}
+        resources:
+          requests:
+            memory: "1G"
+          limits:
+            memory: "2G"
         ports:
         - containerPort: 3000
         envFrom:
