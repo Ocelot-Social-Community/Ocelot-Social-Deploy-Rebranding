@@ -15,6 +15,9 @@ COPY branding/constants/logos.js src/config/
 COPY branding/constants/metadata.js src/config/
 COPY branding/email/ src/middleware/helpers/email/
 
+# copy categories to brand them (use yarn prod:db:data:categories)
+COPY branding/constants/categories.js src/constants/
+
 ##################################################################################
 # BUILD ##########################################################################
 ##################################################################################
